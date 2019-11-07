@@ -4,8 +4,9 @@
     "compilerOptions": {
         "module":"commonjs",
         "target": "es2015",
-        "sourceMap": true
+        "sourceMap": true,
+        "outDir": "dist"  //ts파일을 컴파일 해서 js로 나온거는 이 폴더에 넣음. 
     },
-    "include": ["index.ts"], //컴파일과정에서 포함시킬 파일들을 배열로 적음.
+    "include": ["src/**/*"], //컴파일과정에서 포함시킬 파일들을 배열로 적음.
     "exclude": ["node_modules"] //컴파일과정에서 제외할거 적음. 
 }

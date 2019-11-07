@@ -4,8 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
-    "prestart":"tsc",
+    "start": "tsc-watch --onSuccess \"node ./dist/index.js\" ",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -17,5 +16,10 @@
   "bugs": {
     "url": "https://github.com/anstnsp/typescript1/issues"
   },
-  "homepage": "https://github.com/anstnsp/typescript1#readme"
+  "homepage": "https://github.com/anstnsp/typescript1#readme",
+  "dependencies": {
+    "crypto-js": "^3.1.9-1",
+    "tsc-watch": "^4.0.0",
+    "typescript": "^3.7.2"
+  }
 }
